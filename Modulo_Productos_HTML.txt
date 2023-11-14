@@ -1,0 +1,186 @@
+<!-- ******** PRODUCTO 1 ************** -->
+          <div class="products">
+            <img src="./assets/Img/Bass/EPIPHONE_TOBY_STDARD-IV.webp" alt="Bajo" class="Instruments" />
+
+            <!-- Contenedor info -->
+            <div class="product.info">
+              <!-- Top -->
+              <div class="product-top">
+                  <span>4.5 ⭐</span> 
+                  <p>Ideal para principiantes</p>
+              </div>
+
+              <!-- Mid -->
+                <div class="product-mid">
+                <h3>EPIPHONE TOBY STDARD-IV</h3>
+                <ul>
+                  <li class="list-desc">Bajo de 4 cuerdas. </li>
+                  <li class="list-desc">Posee 22 trastes de tamaño Jumbo.</li>
+                  <li class="list-desc">Tipo pasivo.</li>
+                  <li class="list-desc">Ideal para niños, adultos de pequeña estatura.</li>
+                </ul>
+              </div>
+
+              <!-- Botton -->
+              
+              <div class="product-bot">
+                <p>Precio Actual:</p> <b>150000$</b>
+              </div>
+              <button class="btn-add">Add to Chart</button>
+            </div>
+          </div>
+          <!-- ******** PRODUCTO 2 ************** -->
+          <div class="products">
+            <img src="./assets/Img/Bass/IBANEZ_GSRM20PW.webp" alt="Bajo" class="Instruments" />
+
+            <!-- Contenedor info -->
+            <div class="product.info">
+              <!-- Top -->
+              <div class="product-top">
+                  <span>4.5 ⭐</span> 
+                  <p>Ideal para principiantes</p>
+              </div>
+
+              <!-- Mid -->
+                <div class="product-mid">
+                <h3>EPIPHONE TOBY STDARD-IV</h3>
+                <ul>
+                  <li class="list-desc">Bajo de 4 cuerdas. </li>
+                  <li class="list-desc">Posee 22 trastes de tamaño Jumbo.</li>
+                  <li class="list-desc">Tipo pasivo.</li>
+                  <li class="list-desc">Ideal para niños, adultos de pequeña estatura.</li>
+                </ul>
+              </div>
+
+              <!-- Botton -->
+              
+              <div class="product-bot">
+                <p>Precio Actual:</p> <b>150000$</b>
+              </div>
+              <button class="btn-add">Add to Chart</button>
+            </div>
+          </div>
+          <!-- ******** PRODUCTO 3 ************** -->
+          <div class="products">
+            <img src="./assets/Img/Bass/IBANEZGIO_GSR200-JB.webp" alt="Bajo" class="Instruments" />
+
+            <!-- Contenedor info -->
+            <div class="product.info">
+              <!-- Top -->
+              <div class="product-top">
+                  <span>4.5 ⭐</span> 
+                  <p>Ideal para principiantes</p>
+              </div>
+
+              <!-- Mid -->
+                <div class="product-mid">
+                <h3>EPIPHONE TOBY STDARD-IV</h3>
+                <ul>
+                  <li class="list-desc">Bajo de 4 cuerdas. </li>
+                  <li class="list-desc">Posee 22 trastes de tamaño Jumbo.</li>
+                  <li class="list-desc">Tipo pasivo.</li>
+                  <li class="list-desc">Ideal para niños, adultos de pequeña estatura.</li>
+                </ul>
+              </div>
+
+              <!-- Botton -->
+              
+              <div class="product-bot">
+                <p>Precio Actual:</p> <b>150000$</b>
+              </div>
+              <button class="btn-add">Add to Chart</button>
+            </div>
+          </div>
+          <!-- ******** PRODUCTO 4 ************** -->
+          <div class="products">
+            <img src="./assets/Img/Bass/JACKSON_JS1X.jpg" alt="Bajo" class="Instruments" />
+
+            <!-- Contenedor info -->
+            <div class="product.info">
+              <!-- Top -->
+              <div class="product-top">
+                  <span>4.5 ⭐</span> 
+                  <p>Ideal para principiantes</p>
+              </div>
+
+              <!-- Mid -->
+                <div class="product-mid">
+                <h3>EPIPHONE TOBY STDARD-IV</h3>
+                <ul>
+                  <li class="list-desc">Bajo de 4 cuerdas. </li>
+                  <li class="list-desc">Posee 22 trastes de tamaño Jumbo.</li>
+                  <li class="list-desc">Tipo pasivo.</li>
+                  <li class="list-desc">Ideal para niños, adultos de pequeña estatura.</li>
+                </ul>
+              </div>
+
+              <!-- Botton -->
+              
+              <div class="product-bot">
+                <p>Precio Actual:</p> <b>150000$</b>
+              </div>
+              <button class="btn-add">Add to Chart</button>
+            </div>
+          </div>
+          <!-- ******** PRODUCTO 5 ************** -->
+          <div class="products">
+            <img src="./assets/Img/Bass/MARCUS_MILLER_V3.webp" alt="Bajo" class="Instruments" />
+
+            <!-- Contenedor info -->
+            <div class="product.info">
+              <!-- Top -->
+              <div class="product-top">
+                  <span>4.5 ⭐</span> 
+                  <p>Ideal para principiantes</p>
+              </div>
+
+              <!-- Mid -->
+                <div class="product-mid">
+                <h3>EPIPHONE TOBY STDARD-IV</h3>
+                <ul>
+                  <li class="list-desc">Bajo de 4 cuerdas. </li>
+                  <li class="list-desc">Posee 22 trastes de tamaño Jumbo.</li>
+                  <li class="list-desc">Tipo pasivo.</li>
+                  <li class="list-desc">Ideal para niños, adultos de pequeña estatura.</li>
+                </ul>
+              </div>
+
+              <!-- Botton -->
+              
+              <div class="product-bot">
+                <p>Precio Actual:</p> <b>150000$</b>
+              </div>
+              <button class="btn-add">Add to Chart</button>
+            </div>
+          </div>
+          <!-- ******** PRODUCTO 6 ************** -->
+          <div class="products">
+            <img src="./assets/Img/Bass/SBM2PT_SX2.jpg" alt="Bajo" class="Instruments" />
+
+            <!-- Contenedor info -->
+            <div class="product.info">
+              <!-- Top -->
+              <div class="product-top">
+                  <span>4.5 ⭐</span> 
+                  <p>Ideal para principiantes</p>
+              </div>
+
+              <!-- Mid -->
+                <div class="product-mid">
+                <h3>EPIPHONE TOBY STDARD-IV</h3>
+                <ul>
+                  <li class="list-desc">Bajo de 4 cuerdas. </li>
+                  <li class="list-desc">Posee 22 trastes de tamaño Jumbo.</li>
+                  <li class="list-desc">Tipo pasivo.</li>
+                  <li class="list-desc">Ideal para niños, adultos de pequeña estatura.</li>
+                </ul>
+              </div>
+
+              <!-- Botton -->
+              
+              <div class="product-bot">
+                <p>Precio Actual:</p> <b>150000$</b>
+              </div>
+              <button class="btn-add">Add to Chart</button>
+            </div>
+          </div>

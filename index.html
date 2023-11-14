@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MusicMarket</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="animations.css" />
+    <link rel="stylesheet" href="Mediaqueries.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+  </head>
+  <body>
+    <header>
+      <img src="./assets/Logos/Logo4.png" class="logo" alt="Music_Market" />
+
+      <!-- Nav -->
+      <nav class="navbar">
+        <!-- input and Label para funcionalidad del menu -->
+        <label for="menu-toggle" class="menu-label">
+          <img src="./assets/Img/Bars-menu.png" alt="menu-icon" />
+        </label>
+        <input type="checkbox" id="menu-toggle" />
+
+        <ul class="navbar-list">
+          <li class="nav__link"><a href="#Home">Nosotros</a></li>
+          <li class="nav__link"><a href="#Products">Categorias</a></li>
+          <li class="nav__link"><a href="#Empresas">¿Quieres Vender?</a></li>
+          <li class="nav__link"><a href="#">Crea tu Cuenta</a></li>
+          <li class="nav__link"><a href="#">Ingresa</a></li>
+        </ul>
+
+        <!-- Carrito -->
+        <!-- Input & label para funcion de Carrito -->
+
+        <label for="cart-toggle" class="cart-label">
+          <img
+            src="./assets/Logos/cart_icon.svg"
+            alt="buying car"
+            class="cart-icon"
+          />
+        </label>
+        <input type="checkbox" id="cart-toggle" />
+        <!-- Carrito Agregado -->
+        <div class="cart">
+          <h2>Tu compra</h2>
+          <!-- Compra -->
+          <div class="cart-item">
+            <img
+              src="./assets/Img/Timbals/Timbals.png"
+              class="cart-img"
+              alt="Compra de Carrito"
+            />
+            <div class="item-info">
+              <h3 class="item-title">Timbales</h3>
+              <p class="item-bid">Sub-total:</p>
+              <span class="item-price"> 150$</span>
+            </div>
+            <!-- Botones -->
+            <div class="item-handler">
+              <span class="quantity-handler down">-</span>
+              <span class="item-quantity">1</span>
+              <span class="quantity-handler up">+</span>
+            </div>
+          </div>
+          <div class="cart-item">
+            <img
+              src="./assets/Img/Congas/Meinl_Hb50bk.png"
+              class="cart-img"
+              alt="Compra de Carrito"
+            />
+            <div class="item-info">
+              <h3 class="item-title">Meinl_Hb50bk</h3>
+              <p class="item-bid">Sub-total:</p>
+              <span class="item-price"> 150$</span>
+            </div>
+            <!-- Botones -->
+            <div class="item-handler">
+              <span class="quantity-handler down">-</span>
+              <span class="item-quantity">1</span>
+              <span class="quantity-handler up">+</span>
+            </div>
+          </div>
+          <div class="cart-item">
+            <img
+              src="./assets/Img/Keyboarding/Casio_Xw-p1.png"
+              class="cart-img"
+              alt="Compra de Carrito"
+            />
+            <div class="item-info">
+              <h3 class="item-title">Casio XW-P1</h3>
+              <p class="item-bid">Sub-total:</p>
+              <span class="item-price"> 150$</span>
+            </div>
+            <!-- Botones -->
+            <div class="item-handler">
+              <span class="quantity-handler down">-</span>
+              <span class="item-quantity">1</span>
+              <span class="quantity-handler up">+</span>
+            </div>
+          </div>
+          <div class="cart-item">
+            <img
+              src="./assets/Img/Bass/Bass_2.png"
+              class="cart-img"
+              alt="Compra de Carrito"
+            />
+            <div class="item-info">
+              <h3 class="item-title">Bajo Elec.</h3>
+              <p class="item-bid">Sub-total:</p>
+              <span class="item-price"> 150$</span>
+            </div>
+            <!-- Botones -->
+            <div class="item-handler">
+              <span class="quantity-handler down">-</span>
+              <span class="item-quantity">1</span>
+              <span class="quantity-handler up">+</span>
+            </div>
+          </div>
+
+          <!-- Divisor -->
+          <span class="divider"></span>
+          <div class="cart-total">
+            <p>Total:</p>
+            <span>350$</span>
+          </div>
+
+          <button class="btn-add">Comprar</button>
+        </div>
+        <!-- <div class="overlay"></div> -->
+      </nav>
+    </header>
+    <section id="Home">
+      <div class="Container">
+        <div class="item">
+          <h1>"Music Market"</h1>
+          <h2>donde tu pasión por la música cobra vida</h2>
+          <a href="#Products" target="_blank">Super Ofertas</a>
+        </div>
+        <div class="item2">
+          <p>
+            Tu destino definitivo para todo lo relacionado con instrumentos
+            musicales. Con una amplia gama de productos de alta calidad. Navega
+            a través de nuestra selección cuidadosamente curada y ¡Descubre tu
+            sonido perfecto en <b>Music Market</b> hoy mismo!"
+          </p>
+          <a href="#Products" target="_blank">Super Ofertas</a>
+        </div>
+      </div>
+    </section>
+    <section id="Products">
+      <h3>Best Musicsians, begins here...</h3>
+      <div class="categories">
+        <button class="category active">🎶All</button>
+        <button class="category" data-category="percusion">🥁Percusion</button>
+        <button class="category" data-category="metales">🎺Metales</button>
+        <button class="category" data-category="cuerdas">🎸Cuerdas</button>
+        <button class="category" data-category="keyboarding">
+          🎹Keyboarding
+        </button>
+      </div>
+
+      <!-- ############## PRODUCTOS ######################## -->
+      <div class="products-container">
+        <!-- ******** PRODUCTO 1 ************** -->
+        <div class="products">
+          <img
+            src="./assets/Img/Bass/EPIPHONE_TOBY_STDARD-IV.webp"
+            alt="Bajo"
+            class="Instruments"
+          />
+
+          <!-- Contenedor info -->
+          <div class="product.info">
+            <!-- Top -->
+            <div class="product-top">
+              <span>4.5 ⭐</span>
+              <p>Ideal para principiantes</p>
+            </div>
+
+            <!-- Mid -->
+            <div class="product-mid">
+              <h4>EPIPHONE TOBY STDARD-IV</h4>
+              <ul>
+                <li class="list-desc">Bajo de 4 cuerdas.</li>
+                <li class="list-desc">Posee 22 trastes de tamaño Jumbo.</li>
+                <li class="list-desc">Tipo pasivo.</li>
+                <li class="list-desc">
+                  Ideal para niños, adultos de pequeña estatura.
+                </li>
+              </ul>
+            </div>
+
+            <!-- Botton -->
+
+            <div class="product-bot">
+              <p>Precio Actual:</p>
+              <b>150000$</b>
+            </div>
+            <button class="btn-add">Add to Chart</button>
+          </div>
+        </div>
+        <!-- ******** PRODUCTO 2 ************** -->
+        <div class="products">
+          <img
+            src="./assets/Img/Bass/IBANEZ_GSRM20PW.webp"
+            alt="Bajo"
+            class="Instruments"
+          />
+
+          <!-- Contenedor info -->
+          <div class="product.info">
+            <!-- Top -->
+            <div class="product-top">
+              <span>4.5 ⭐</span>
+              <p>Ideal para principiantes</p>
+            </div>
+
+            <!-- Mid -->
+            <div class="product-mid">
+              <h4>EPIPHONE TOBY STDARD-IV</h4>
+              <ul>
+                <li class="list-desc">Bajo de 4 cuerdas.</li>
+                <li class="list-desc">Posee 22 trastes de tamaño Jumbo.</li>
+                <li class="list-desc">Tipo pasivo.</li>
+                <li class="list-desc">
+                  Ideal para niños, adultos de pequeña estatura.
+                </li>
+              </ul>
+            </div>
+
+            <!-- Botton -->
+
+            <div class="product-bot">
+              <p>Precio Actual:</p>
+              <b>150000$</b>
+            </div>
+            <button class="btn-add">Add to Chart</button>
+          </div>
+        </div>
+        <!-- ******** PRODUCTO 3 ************** -->
+        <div class="products">
+          <img
+            src="./assets/Img/Bass/IBANEZGIO_GSR200-JB.webp"
+            alt="Bajo"
+            class="Instruments"
+          />
+
+          <!-- Contenedor info -->
+          <div class="product.info">
+            <!-- Top -->
+            <div class="product-top">
+              <span>4.5 ⭐</span>
+              <p>Ideal para principiantes</p>
+            </div>
+
+            <!-- Mid -->
+            <div class="product-mid">
+              <h4>EPIPHONE TOBY STDARD-IV</h4>
+              <ul>
+                <li class="list-desc">Bajo de 4 cuerdas.</li>
+                <li class="list-desc">Posee 22 trastes de tamaño Jumbo.</li>
+                <li class="list-desc">Tipo pasivo.</li>
+                <li class="list-desc">
+                  Ideal para niños, adultos de pequeña estatura.
+                </li>
+              </ul>
+            </div>
+
+            <!-- Botton -->
+
+            <div class="product-bot">
+              <p>Precio Actual:</p>
+              <b>150000$</b>
+            </div>
+            <button class="btn-add">Add to Chart</button>
+          </div>
+        </div>
+        <!-- ******** PRODUCTO 4 ************** -->
+        <div class="products">
+          <img
+            src="./assets/Img/Bass/JACKSON_JS1X.jpg"
+            alt="Bajo"
+            class="Instruments"
+          />
+
+          <!-- Contenedor info -->
+          <div class="product.info">
+            <!-- Top -->
+            <div class="product-top">
+              <span>4.5 ⭐</span>
+              <p>Ideal para principiantes</p>
+            </div>
+
+            <!-- Mid -->
+            <div class="product-mid">
+              <h4>EPIPHONE TOBY STDARD-IV</h4>
+              <ul>
+                <li class="list-desc">Bajo de 4 cuerdas.</li>
+                <li class="list-desc">Posee 22 trastes de tamaño Jumbo.</li>
+                <li class="list-desc">Tipo pasivo.</li>
+                <li class="list-desc">
+                  Ideal para niños, adultos de pequeña estatura.
+                </li>
+              </ul>
+            </div>
+
+            <!-- Botton -->
+
+            <div class="product-bot">
+              <p>Precio Actual:</p>
+              <b>150000$</b>
+            </div>
+            <button class="btn-add">Add to Chart</button>
+          </div>
+        </div>
+        <!-- ******** PRODUCTO 5 ************** -->
+        <div class="products">
+          <img
+            src="./assets/Img/Bass/MARCUS_MILLER_V3.webp"
+            alt="Bajo"
+            class="Instruments"
+          />
+
+          <!-- Contenedor info -->
+          <div class="product.info">
+            <!-- Top -->
+            <div class="product-top">
+              <span>4.5 ⭐</span>
+              <p>Ideal para principiantes</p>
+            </div>
+
+            <!-- Mid -->
+            <div class="product-mid">
+              <h4>EPIPHONE TOBY STDARD-IV</h4>
+              <ul>
+                <li class="list-desc">Bajo de 4 cuerdas.</li>
+                <li class="list-desc">Posee 22 trastes de tamaño Jumbo.</li>
+                <li class="list-desc">Tipo pasivo.</li>
+                <li class="list-desc">
+                  Ideal para niños, adultos de pequeña estatura.
+                </li>
+              </ul>
+            </div>
+
+            <!-- Botton -->
+
+            <div class="product-bot">
+              <p>Precio Actual:</p>
+              <b>150000$</b>
+            </div>
+            <button class="btn-add">Add to Chart</button>
+          </div>
+        </div>
+        <!-- ******** PRODUCTO 6 ************** -->
+        <div class="products">
+          <img
+            src="./assets/Img/Bass/SBM2PT_SX2.jpg"
+            alt="Bajo"
+            class="Instruments"
+          />
+
+          <!-- Contenedor info -->
+          <div class="product.info">
+            <!-- Top -->
+            <div class="product-top">
+              <span>4.5 ⭐</span>
+              <p>Ideal para principiantes</p>
+            </div>
+
+            <!-- Mid -->
+            <div class="product-mid">
+              <h4>EPIPHONE TOBY STDARD-IV</h4>
+              <ul>
+                <li class="list-desc">Bajo de 4 cuerdas.</li>
+                <li class="list-desc">Posee 22 trastes de tamaño Jumbo.</li>
+                <li class="list-desc">Tipo pasivo.</li>
+                <li class="list-desc">
+                  Ideal para niños, adultos de pequeña estatura.
+                </li>
+              </ul>
+            </div>
+
+            <!-- Botton -->
+
+            <div class="product-bot">
+              <p>Precio Actual:</p>
+              <b>150000$</b>
+            </div>
+            <button class="btn-add">Add to Chart</button>
+          </div>
+        </div>
+      </div>
+
+      <button class="btn-more">Add</button>
+    </section>
+
+    <section id="Empresas">
+      <h3>¿Quieres Vender tus Instrumentos?.</h3>
+      <div class="Enterprise">
+        <div class="Enterprise-item">
+          <img
+            src="./assets/Img/Compra_Venta3.jpg"
+            class="Compra_Venta"
+            alt="Compra_Venta"
+          />
+        </div>
+        <div class="Enterprise-item2">
+          <h5>Music Market Partnership</h5>
+          <p>
+            ¿Eres un fabricante o distribuidor de instrumentos musicales de alta
+            calidad? Únete a nosotros y forma parte de nuestra comunidad de
+            músicos y amantes de la música, mientras expandes tu alcance y
+            aumentas tus ventas. ¡Descubre el potencial ilimitado de tu marca en
+            <b>Music Market Partnership!</b>"
+          </p>
+
+          <a href="#" target="_blank">Registrate como Vendedor</a>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div id="footer-items">
+        <div class="redes">
+          <span>Seguinos en nuestras redes</span>
+          <img src="./assets/Img/Twitter.png" class="red-icon" alt="Twitter" />
+          <p>Tw: @Music_Market</p>
+          <img
+            src="./assets/Img/instagram2.png"
+            class="red-icon"
+            alt="Instagram"
+          />
+          <p>IG: @Music_Market</p>
+        </div>
+        <nav class="footer-nav">
+          <ul class="footer-links">
+            <li>
+              <a href="#" target="_blank">Contactanos</a>
+            </li>
+            <li><a href="#">¿Quieres Colaborar?</a></li>
+            <li>
+              Telefonos:
+              <p>555-555-55</p>
+            </li>
+            <li>
+              Direccion:
+              <p>Av. Siempre Viva 777</p>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <p>Set on 🔥, then made by <span>LORDSHALL. All rights reserved</span></p>
+    </footer>
+  </body>
+</html>
