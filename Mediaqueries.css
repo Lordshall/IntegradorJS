@@ -43,6 +43,11 @@
     display: flex;
   }
   /*################### HOME #####################*/
+
+  #Home {
+    width: 100%;
+  }
+
   .Container {
     padding-left: 15%;
     width: 100%;
@@ -65,11 +70,6 @@
     display: none;
   }
   /*################### Products #####################*/
-
-  /* #Products h3 {
-    font-size: 24px;
-    max-width: 100px;
-  } */
 
   .categories {
     flex-wrap: wrap;
@@ -152,7 +152,7 @@
 }
 
 /* **************************************************************** */
-@media (max-width: 576px) {
+@media (max-width: 580px) {
   .cart {
     left: 0;
     width: 100%;
@@ -163,9 +163,9 @@
     flex-wrap: wrap;
   }
 
-  #Home {
-    width: 80%;
-  }
+  /* #Home {
+    width: 100%;
+  } */
 
   .Container {
     display: flex;
