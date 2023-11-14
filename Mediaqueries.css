@@ -2,148 +2,155 @@
   .navbar {
     gap: 5px;
   }
-  * {
+
+  /* * {
     border: 1px solid red;
+    } */
 
-    .navbar-list {
-      position: absolute;
-      border: 2px solid var(--bg-white);
-      top: 110px;
-      width: 90%;
-      left: 2%;
-      right: 2%;
-      border-top: 0;
-      flex-direction: column;
-      background: linear-gradient(to top, var(--text-blue), var(--text-Black));
-      border-radius: 0px 0px 20px 20px;
-      border-radius: 0px 0px 15px 15px;
-      -webkit-border-radius: 0px 0px 15px 15px;
-      -moz-border-radius: 0px 0px 15px 15px;
-      -ms-border-radius: 0px 0px 15px 15px;
-      -o-border-radius: 0px 0px 15px 15px;
-      align-items: flex-start;
-      padding: 20px 20px;
-      display: none;
-    }
+  .navbar-list {
+    position: absolute;
+    border: 2px solid var(--bg-white);
+    top: 110px;
+    width: 90%;
+    left: 1%;
+    right: 1%;
+    border-top: 0;
+    flex-direction: column;
+    background: linear-gradient(to top, var(--text-blue), var(--text-Black));
+    border-radius: 0px 0px 20px 20px;
+    border-radius: 0px 0px 15px 15px;
+    -webkit-border-radius: 0px 0px 15px 15px;
+    -moz-border-radius: 0px 0px 15px 15px;
+    -ms-border-radius: 0px 0px 15px 15px;
+    -o-border-radius: 0px 0px 15px 15px;
+    align-items: flex-start;
+    padding: 20px 20px;
+    display: none;
+  }
 
-    .menu-label {
-      margin-right: 60px;
-      display: flex;
-      cursor: pointer;
-      order: 2;
-    }
+  .menu-label {
+    margin-right: 60px;
+    display: flex;
+    cursor: pointer;
+    order: 2;
+  }
 
-    .menu-label img {
-      padding-top: 15px;
-    }
+  .menu-label img {
+    padding-top: 15px;
+  }
 
-    #menu-toggle:checked + .navbar-list {
-      display: flex;
-    }
-    /*################### HOME #####################*/
-    .Container {
-      padding-left: 15%;
-      width: 100%;
-      text-align: center;
-      justify-content: center;
-      flex-direction: column;
-      gap: 20px;
-    }
+  #menu-toggle:checked + .navbar-list {
+    display: flex;
+  }
+  /*################### HOME #####################*/
+  .Container {
+    padding-left: 15%;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+  }
 
-    .item {
-      align-items: center;
-      justify-content: center;
-    }
+  .item {
+    align-items: center;
+    justify-content: center;
+  }
 
-    .item a {
-      display: flex;
-    }
+  .item a {
+    display: flex;
+  }
 
-    .item2 {
-      display: none;
-    }
-    /*################### Products #####################*/
+  .item2 {
+    display: none;
+  }
+  /*################### Products #####################*/
 
-    .categories {
-      flex-wrap: wrap;
-      max-width: 390px;
-    }
+  /* #Products h3 {
+    font-size: 24px;
+    max-width: 100px;
+  } */
 
-    .category {
-      width: 120px;
-    }
+  .categories {
+    flex-wrap: wrap;
+    max-width: 390px;
+  }
 
-    .product-mid h3 {
-      font-size: 16px;
-    }
+  .category {
+    width: 120px;
+  }
 
-    /*################### Empresa #####################*/
+  .product-mid h3 {
+    font-size: 16px;
+  }
 
-    .Enterprise {
-      max-width: 90%;
-      justify-content: space-around;
-    }
+  /*################### Empresa #####################*/
 
-    .Enterprise-item,
-    .Enterprise-item2 {
-      max-width: 50%;
-    }
+  .Enterprise {
+    max-width: 90%;
+    justify-content: space-around;
+  }
 
-    .Enterprise-item2 {
-      justify-content: flex-start;
-    }
-    .Enterprise-item2 p {
-      display: none;
-    }
-    .Compra_Venta {
-      width: 300px;
-    }
+  .Enterprise-item,
+  .Enterprise-item2 {
+    max-width: 50%;
+  }
 
-    .Enterprise-item2 h5 {
-      font-size: 24px;
-      max-width: 100px;
-    }
+  .Enterprise-item2 {
+    justify-content: flex-start;
+  }
+  .Enterprise-item2 p {
+    display: none;
+  }
+  .Compra_Venta {
+    width: 300px;
+  }
 
-    .Enterprise-item2 a {
-      align-items: center;
-      font-size: 12px;
-    }
+  .Enterprise-item2 h5 {
+    font-size: 24px;
+    max-width: 100px;
+  }
 
-    /*################### Footer #####################*/
-    #footer {
-      width: 90%;
-    }
+  .Enterprise-item2 a {
+    align-items: center;
+    font-size: 12px;
+  }
 
-    #footer-items {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-    }
+  /*################### Footer #####################*/
+  #footer {
+    width: 90%;
+  }
 
-    .footer-nav {
-      margin-left: 0px;
-    }
+  #footer-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 
-    .redes {
-      text-align: center;
-      align-items: center;
-    }
+  .footer-nav {
+    margin-left: 0px;
+  }
 
-    .redes p,
-    .redes span {
-      font-size: 12px;
-    }
+  .redes {
+    text-align: center;
+    align-items: center;
+  }
 
-    footer p,
-    .footer-nav p,
-    .footer-links,
-    .footer-links a,
-    .footer-links span {
-      font-size: 12px;
-      font-weight: 500;
-    }
+  .redes p,
+  .redes span {
+    font-size: 12px;
+  }
+
+  footer p,
+  .footer-nav p,
+  .footer-links,
+  .footer-links a,
+  .footer-links span {
+    font-size: 12px;
+    font-weight: 500;
   }
 }
+
 /* **************************************************************** */
 @media (max-width: 576px) {
   .cart {
@@ -168,7 +175,7 @@
   }
 
   .item,
-  item2 {
+  .item2 {
     justify-content: center;
     max-width: 300px;
   }
@@ -181,6 +188,18 @@
   #Products h3 {
     font-size: 32px;
   }
+
+  #Products h3 {
+    font-size: 24px;
+    max-width: 300px;
+    text-align: center;
+  }
+
+  .btn-more {
+    font-size: 12px;
+    max-width: 40%;
+  }
+
   /*################### Empresa #####################*/
 
   .Enterprise {
@@ -216,7 +235,7 @@
   .Enterprise-item2 a {
     text-align: center;
     font-size: 12px;
-    min-width: 100px;
+    max-width: fit-content;
   }
 
   /*################### Footer #####################*/
