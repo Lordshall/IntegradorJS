@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MusicMarket</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="animations.css" />
     <link rel="stylesheet" href="Mediaqueries.css" />
@@ -29,12 +33,13 @@
   <body>
     <header>
       <img src="./assets/Logos/Logo4.png" class="logo" alt="Music_Market" />
-
-      <!-- Nav -->
       <nav class="navbar">
+        <!-- Nav -->
+
         <!-- input and Label para funcionalidad del menu -->
         <label for="menu-toggle" class="menu-label">
           <img src="./assets/Img/Bars-menu.png" alt="menu-icon" />
+          <!-- <i class="fa-regular fa-piano-keyboard" style="color: #fd840e"></i> -->
         </label>
         <input type="checkbox" id="menu-toggle" />
 
@@ -55,6 +60,7 @@
             alt="buying car"
             class="cart-icon"
           />
+          <!-- <i class="fa-solid fa-cart-flatbed cart-icon"></i> -->
         </label>
         <input type="checkbox" id="cart-toggle" />
         <!-- Carrito Agregado -->
@@ -143,69 +149,75 @@
 
           <button class="btn-add">Comprar</button>
         </div>
-        <!-- <div class="overlay"></div> -->
+        <div class="overlay"></div>
       </nav>
     </header>
-    <section id="Home">
-      <div class="Container">
-        <div class="item">
-          <h1>"Music Market"</h1>
-          <h2>donde tu pasión por la música cobra vida</h2>
-          <a href="#Products" target="_blank">Super Ofertas</a>
-        </div>
-        <div class="item2">
-          <p>
-            Tu destino definitivo para todo lo relacionado con instrumentos
-            musicales. Con una amplia gama de productos de alta calidad. Navega
-            a través de nuestra selección cuidadosamente curada y ¡Descubre tu
-            sonido perfecto en <b>Music Market</b> hoy mismo!"
-          </p>
-          <a href="#Products" target="_blank">Super Ofertas</a>
-        </div>
-      </div>
-    </section>
-    <section id="Products">
-      <h3>Best Musicsians, begins here...</h3>
-      <div class="categories">
-        <button class="category active">🎶All</button>
-        <button class="category" data-category="percusion">🥁Percusion</button>
-        <button class="category" data-category="metales">🎺Metales</button>
-        <button class="category" data-category="cuerdas">🎸Cuerdas</button>
-        <button class="category" data-category="keyboarding">
-          🎹Keyboarding
-        </button>
-      </div>
 
-      <!-- ############## PRODUCTOS ######################## -->
-      <div class="products-container"></div>
-
-      <button class="btn-more">Ver Más</button>
-    </section>
-
-    <section id="Empresas">
-      <h3>¿Quieres Vender tus Instrumentos?.</h3>
-      <div class="Enterprise">
-        <div class="Enterprise-item">
-          <img
-            src="./assets/Img/Compra_Venta3.jpg"
-            class="Compra_Venta"
-            alt="Compra_Venta"
-          />
+    <main>
+      <section id="Home">
+        <div class="Container">
+          <div class="item">
+            <h1>"Music Market"</h1>
+            <h2>donde tu pasión por la música cobra vida</h2>
+            <a href="#Products" target="_blank">Super Ofertas</a>
+          </div>
+          <div class="item2">
+            <p>
+              Tu destino definitivo para todo lo relacionado con instrumentos
+              musicales. Con una amplia gama de productos de alta calidad.
+              Navega a través de nuestra selección cuidadosamente curada y
+              ¡Descubre tu sonido perfecto en <b>Music Market</b> hoy mismo!"
+            </p>
+            <a href="#Products" target="_blank">Super Ofertas</a>
+          </div>
         </div>
-        <div class="Enterprise-item2">
-          <h5>Music Market Partnership</h5>
-          <p>
-            ¿Eres un fabricante o distribuidor de instrumentos musicales de alta
-            calidad? Únete a nosotros y forma parte de nuestra comunidad de
-            músicos y amantes de la música, mientras expandes tu alcance y
-            aumentas tus ventas. ¡Descubre el potencial ilimitado de tu marca en
-            <b>Music Market Partnership!</b>"
-          </p>
-
-          <a href="#" target="_blank">Registrate como Vendedor</a>
+      </section>
+      <section id="Products">
+        <h3>Best Musicsians, begins here...</h3>
+        <div class="categories">
+          <button class="category active">🎶All</button>
+          <button class="category" data-category="percusion">
+            🥁Percusion
+          </button>
+          <button class="category" data-category="metales">🎺Metales</button>
+          <button class="category" data-category="cuerdas">🎸Cuerdas</button>
+          <button class="category" data-category="keyboarding">
+            🎹Keyboarding
+          </button>
         </div>
-      </div>
-    </section>
+
+        <!-- ############## PRODUCTOS ######################## -->
+        <div class="products-container"></div>
+
+        <button class="btn-more">Ver Más</button>
+      </section>
+
+      <section id="Empresas">
+        <h3>¿Quieres Vender tus Instrumentos?.</h3>
+        <div class="Enterprise">
+          <div class="Enterprise-item">
+            <img
+              src="./assets/Img/Compra_Venta3.jpg"
+              class="Compra_Venta"
+              alt="Compra_Venta"
+            />
+          </div>
+          <div class="Enterprise-item2">
+            <h5>Music Market Partnership</h5>
+            <p>
+              ¿Eres un fabricante o distribuidor de instrumentos musicales de
+              alta calidad? Únete a nosotros y forma parte de nuestra comunidad
+              de músicos y amantes de la música, mientras expandes tu alcance y
+              aumentas tus ventas. ¡Descubre el potencial ilimitado de tu marca
+              en
+              <b>Music Market Partnership!</b>"
+            </p>
+
+            <a href="#" target="_blank">Registrate como Vendedor</a>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer>
       <div id="footer-items">
         <div class="redes">
