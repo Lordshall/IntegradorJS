@@ -1,24 +1,29 @@
 // Contenedor de Articulos
 const productsContainer = document.querySelector(".products-container");
+//Boton Ver mas
+const showMoreBtn = document.querySelector(".btn-more");
 
-// Fun para crear el HTML de Articulos
-const createProductTemplate = (product) => {
-  // Agragar el DAtaset
+// ###################### Log para renderizar #################
 
-  const { id, name, price, category, Description, Tag, cardimg } = product;
+// ######################## Log Ver mas #########################
+
+// Fun para crear el HTML de Articulos #################
+const createProductTemplate = (products) => {
+  // Agregar el Dataset
+
+  const { id, name, price, category, Description, Tag, cardimg } = products;
   return `<div class="products">
-           <img src="${product.cardimg}" alt="${name}" class="Instruments" />
+           <img src="${cardimg}" alt="${name}" class="Instruments" />
            
            <!-- Contenedor info -->
            <div class="product.info">
              <!-- Top -->
              <div class="product-top">
-                 <span>⭐</span>
-                 <p>${Tag}</p>
+                 <p>⭐${Tag}</p>
              </div>
              <!-- Mid -->
                <div class="product-mid">
-               <h3>${name}</h3>
+               <h4>${name}</h4>
                <ul>
                  <li class="list-desc">Bajo de 4 cuerdas. </li>
                  <li class="list-desc">Posee 22 trastes de tamaño Jumbo.</li>
@@ -30,20 +35,31 @@ const createProductTemplate = (product) => {
              <div class="product-bot">
                <p>Precio Actual:</p> <b>${price}$</b>
              </div>
-             <button class="btn-add">Add to Chart</button>
+             <button class="btn-add">Agregar</button>
            </div>
          </div>`;
 };
-
 // Funcion para renderizaar productos
 const renderProducts = (productList) => {
-  productsContainer.innerHTML = productList.map(createProductTemplate).join("");
+  productsContainer.innerHTML += productList
+    .map(createProductTemplate)
+    .join("");
+};
+
+// ######################## Log. Ver mas #########################
+
+const showMoreArticles = () => {
+  AppState.currentProductsIndex += 1;
+
+  let { products, currentProductsIndex } = AppState;
+
+  renderProducts(products[currentProductsIndex]);
 };
 
 // Funcion Inic.
 const init = () => {
-  console.log(AppState.products[0]);
   renderProducts(AppState.products[0]);
+  showMoreBtn.addEventListener("click", showMoreArticles);
 };
 
 init();

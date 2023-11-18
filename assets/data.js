@@ -256,6 +256,7 @@ const instrumentData = [
   },
 ];
 
+// funcion que divide el array en X cantidad de Arrays
 const DivideProductsInParts = (size) => {
   let productList = [];
 
@@ -269,6 +270,6 @@ const DivideProductsInParts = (size) => {
 const AppState = {
   products: DivideProductsInParts(6),
   currentProductsIndex: 0,
-  ProductsLimit: DivideProductsInParts(6).length,
+  productsLimit: DivideProductsInParts(6).length,
   activeFilter: null,
 };
