@@ -227,7 +227,7 @@ header {
 
 /* ############################ HOME ################################## */
 main {
-  background: var(--primary);
+  background: linear-gradient(to top, var(--primary), var(--bg-azul-10));
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -235,6 +235,7 @@ main {
   width: 100%;
   color: black;
   overflow-x: hidden;
+  background-size: contain;
 }
 
 #Home {

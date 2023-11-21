@@ -70,12 +70,21 @@ const showMoreArticles = () => {
   }
 };
 
+//Fun para ocultar boton cargar mas
+//cuando este una categoria seleccionada
+const setShowMoreArticlesSeen = () => {
+  if (AppState.activeFilter) {
+    showMoreBtn.classList.remove("hidden");
+  }
+
+  showMoreBtn.classList.add("hidden");
+};
+
 // ############# Log Filtros ################
 //Fun cambiar estado de los botones Categorias
 const changeBtnActiveState = (selectedCategory) => {
   const categories = [...categoriesList];
-  console.log(AppState);
-
+  // console.log(AppState);
   categories.forEach((categoryBtn) => {
     if (categoryBtn.dataset.category !== selectedCategory) {
       categoryBtn.classList.remove("active");
@@ -85,16 +94,33 @@ const changeBtnActiveState = (selectedCategory) => {
   });
 };
 
-// Fiun para cambiar estado de filtros activo
+// Fun para cambiar estado de filtros activo
 const changeFilterState = (btn) => {
   AppState.activeFilter = btn.dataset.category;
   changeBtnActiveState(AppState.activeFilter);
+  setShowMoreArticlesSeen(AppState.activeFilter);
 };
 
-// Fiun para aplicar filtros
+// Fun filtrar productos
+const renderFilteredProducts = () => {
+  const filteredProducts = instrumentData.filter(
+    (products) => products.category === AppState.activeFilter
+  );
+  // console.log(filteredProducts);
+  renderProducts(filteredProducts);
+};
+
+// Fun para aplicar filtros
 const applyFilter = ({ target }) => {
   if (!isInactiveFilterBtn(target)) return;
   changeFilterState(target);
+  productsContainer.innerHTML = "";
+  if (AppState.activeFilter) {
+    renderFilteredProducts();
+    AppState.currentProductsIndex = 0;
+    return;
+  }
+  renderProducts(AppState.products[0]);
 };
 
 //Fun para saber si el elemento presionado es un

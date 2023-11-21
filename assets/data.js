@@ -121,7 +121,7 @@ const instrumentData = [
     Tag: "5.0 Ideal para Estudio",
     Description:
       "AKAI Profesional MPK Mini MK3 | Controlador de teclado MIDI USB de 25 teclas con 8 almohadillas de percusión con retroiluminación, 8 botones y software de producción musical incluido",
-    cardimg: "./assets/Img/Keyboarding/Toca_3170nf_Nf_Elite_Pro.png",
+    cardimg: "./assets/Img/Keyboarding/AKAI.png",
   },
   {
     id: 14,
@@ -209,7 +209,7 @@ const instrumentData = [
     price: "100$",
     category: "metales",
     Description: "Trompeta Jean Paul USA TR-330, estándar, en Bb",
-    cardimg: "./assets/Img/Trumpet/Trumpet.png",
+    cardimg: "./assets/Img/Trumpets/Trumpet.png",
   },
   {
     id: 24,
@@ -217,7 +217,7 @@ const instrumentData = [
     price: "100$",
     category: "metales",
     Description: "Yamaha Ytr 2330, Trumpeta Para Estudiantes",
-    cardimg: "./assets/Img/Trumpet/Trumpet2.png",
+    cardimg: "./assets/Img/Trumpets/Trumpet2.png",
   },
   {
     id: 25,
@@ -226,7 +226,7 @@ const instrumentData = [
     category: "metales",
     Description:
       "Apollo Trombón Tenor en lacado dorado, completo con estuche y accesorios (Student)",
-    cardimg: "./assets/Img/Trumpet/Tromb.png",
+    cardimg: "./assets/Img/Trumpets/Tromb.png",
   },
   {
     id: 26,
@@ -234,7 +234,7 @@ const instrumentData = [
     price: "100$",
     category: "metales",
     Description: "Trombon A Vara Tenor Bronce Estuche Rigido Aceite Kit Combo",
-    cardimg: "./assets/Img/Trumpet/Tromb2.png",
+    cardimg: "./assets/Img/Trumpets/Tromb2.png",
   },
   {
     id: 27,
@@ -243,7 +243,7 @@ const instrumentData = [
     category: "metales",
     Description:
       "summina Eb Saxofón Alto Latón Lacquered Gold E Flat Saxo 82Z Instrumento de viento de madera con cepillo de limpieza, guantes de tela, funda acolchada",
-    cardimg: "./assets/Img/Trumpet/Saxo.png",
+    cardimg: "./assets/Img/Trumpets/Saxo.png",
   },
   {
     id: 28,
@@ -252,7 +252,7 @@ const instrumentData = [
     category: "metales",
     Description:
       "Apollo Saxofón alto en laca dorada con almohadillas de cuero, completo con funda y accesorios",
-    cardimg: "./assets/Img/Trumpet/Saxo2.png",
+    cardimg: "./assets/Img/Trumpets/Saxo2.png",
   },
 ];
 
