@@ -630,3 +630,7 @@ footer span {
 footer p {
   color: var(--bg-white);
 }
+
+.hidden {
+  display: none;
+}
