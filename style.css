@@ -113,7 +113,7 @@ header {
 
 .cart-img {
   width: 65px;
-  height: 65px;
+  height: 60px;
 }
 
 .cart {
@@ -151,6 +151,7 @@ header {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+  min-width: 330px;
 }
 
 .item-title {
