@@ -94,8 +94,6 @@ header {
 /* ################### CARRITO ####################### */
 
 /* ***Menu-toggle Ocultado*** */
-#cart-toggle,
-#menu-toggle,
 .menu-label {
   display: none;
 }
@@ -108,13 +106,32 @@ header {
   margin-top: 20px;
   margin-left: 40px;
   cursor: pointer;
-  z-index: 2;
+  /* z-index: 2; */
 }
 
 .cart-img {
   width: 65px;
   height: 60px;
 }
+
+/* .bubble {
+  position: absolute;
+  top: 75px;
+  right: 295px;
+  text-align: center;
+  background: var(--secondary);
+  color: var(--text-white);
+  font-size: 12px;
+  font-weight: 500;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1px;
+  border-radius: 50%;
+  z-index: 2;
+} */
 
 .cart {
   position: absolute;
@@ -199,6 +216,7 @@ header {
 .divider {
   margin-top: 20px;
   border: 0.5px solid var(--text-blue);
+  width: 100%;
 }
 
 .cart-total {
@@ -219,12 +237,18 @@ header {
   font-style: italic;
 }
 
+/*Toggle del carro*/
+.open-cart {
+  transform: translate(0%);
+  transition: all 0.5s cubic-bezier(0.92, 0.01, 0.35, 0.99);
+}
+
 /* ##################### HACIENDO FUNCIONAL EL CARRITO############### */
 
-#cart-toggle:checked ~ .cart {
+/* #cart-toggle:checked ~ .cart {
   transform: translate(0);
-  /* display: flex; */
-}
+  display: flex;
+} */
 
 /* ############################ HOME ################################## */
 main {
@@ -446,6 +470,22 @@ main {
   font-size: 20px;
   padding-top: 10px;
   margin-left: 20%;
+}
+
+.btn-delete {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 10px 40px;
+  width: 100%;
+  border: 2px solid var(--text-blue);
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.btn-delete:hover {
+  background: linear-gradient(to top, var(--text-blue), var(--electric));
+  transition: 0.3s all ease-in;
 }
 
 .btn-more {

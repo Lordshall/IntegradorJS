@@ -3,6 +3,15 @@ html {
   scroll-padding-top: 100px;
 }
 
+/*Header*/
+/*Para efecto de glassmorphismo cuando abrimos menú hamburguesa y carrito*/
+
+/*GLASMORPHISM:
+  Básicamente, el concepto principal de esta tendencia es poner un fondo semitransparente que
+  añade un difuminado al fondo del div en el que se aplique. En este caso, lo usamos para que al abrir el menú
+  hamburguesa y el carrito lo demás de la página se vea borroso abajo de este div de clase overlay.
+  */
+
 .overlay {
   position: absolute;
   width: 100%;
@@ -10,19 +19,24 @@ html {
   top: 120px;
   left: 0;
   z-index: 1;
-  background: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(16.5px);
-  -webkit-backdrop-filter: blur(16.5px);
-  opacity: 0;
-  transform: translate(-200%);
-  transition: opacity 0.7s ease;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  display: none;
 }
 
-#cart-toggle:checked ~ .overlay,
+/*Este toggle para el overlay (para que funcione unicamente cuando abrimos carrito o menu hamburguesa.
+  Aclarar que funciona porque son elementos hermanos y overlay esta debajo de los dos inputs en el código.*/
+.show-overlay {
+  display: block;
+}
+
+/* #cart-toggle:checked ~ .overlay,
 #menu-toggle:checked ~ .overlay {
   transform: translate(0);
   opacity: 1;
-}
+} */
 
 .navbar-list li {
   position: relative;
@@ -87,7 +101,7 @@ html {
 .btn-more:hover,
 .item2 a:hover,
 .Enterprise-item2 a:hover {
-  background: darkblue;
+  background: var(--electric);
 }
 
 /* ################ Animations ############ */

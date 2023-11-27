@@ -37,11 +37,15 @@
         <!-- Nav -->
 
         <!-- input and Label para funcionalidad del menu -->
-        <label for="menu-toggle" class="menu-label">
-          <img src="./assets/Img/Bars-menu.png" alt="menu-icon" />
+        <div class="menu-label">
+          <img
+            src="./assets/Img/Bars-menu.png"
+            alt="menu-icon"
+            class="menu-icon"
+          />
           <!-- <i class="fa-regular fa-piano-keyboard" style="color: #fd840e"></i> -->
-        </label>
-        <input type="checkbox" id="menu-toggle" />
+        </div>
+        <!-- <input type="checkbox" id="menu-toggle" /> -->
 
         <ul class="navbar-list">
           <li class="nav__link"><a href="#Home">Nosotros</a></li>
@@ -54,20 +58,23 @@
         <!-- Carrito -->
         <!-- Input & label para funcion de Carrito -->
 
-        <label for="cart-toggle" class="cart-label">
+        <div class="cart-label">
           <img
             src="./assets/Logos/cart_icon.svg"
             alt="buying car"
             class="cart-icon"
           />
+          <!-- <div class="bubble">0</div> -->
           <!-- <i class="fa-solid fa-cart-flatbed cart-icon"></i> -->
-        </label>
-        <input type="checkbox" id="cart-toggle" />
+        </div>
+        <!-- <input type="checkbox" id="cart-toggle" /> -->
         <!-- Carrito Agregado -->
         <div class="cart">
           <h2>Tu compra</h2>
+
+          <div class="container"></div>
           <!-- Compra -->
-          <div class="cart-item">
+          <!-- <div class="cart-item">
             <img
               src="./assets/Img/Timbals/Timbals.png"
               class="cart-img"
@@ -77,9 +84,9 @@
               <h3 class="item-title">Timbales</h3>
               <p class="item-bid">Sub-total:</p>
               <span class="item-price"> 150$</span>
-            </div>
-            <!-- Botones -->
-            <div class="item-handler">
+            </div> -->
+          <!-- Botones -->
+          <!-- <div class="item-handler">
               <span class="quantity-handler down">-</span>
               <span class="item-quantity">1</span>
               <span class="quantity-handler up">+</span>
@@ -95,9 +102,9 @@
               <h3 class="item-title">Meinl_Hb50bk</h3>
               <p class="item-bid">Sub-total:</p>
               <span class="item-price"> 150$</span>
-            </div>
-            <!-- Botones -->
-            <div class="item-handler">
+            </div> -->
+          <!-- Botones -->
+          <!-- <div class="item-handler">
               <span class="quantity-handler down">-</span>
               <span class="item-quantity">1</span>
               <span class="quantity-handler up">+</span>
@@ -113,9 +120,9 @@
               <h3 class="item-title">Casio XW-P1</h3>
               <p class="item-bid">Sub-total:</p>
               <span class="item-price"> 150$</span>
-            </div>
-            <!-- Botones -->
-            <div class="item-handler">
+            </div> -->
+          <!-- Botones -->
+          <!-- <div class="item-handler">
               <span class="quantity-handler down">-</span>
               <span class="item-quantity">1</span>
               <span class="quantity-handler up">+</span>
@@ -131,23 +138,24 @@
               <h3 class="item-title">Bajo Elec.</h3>
               <p class="item-bid">Sub-total:</p>
               <span class="item-price"> 150$</span>
-            </div>
-            <!-- Botones -->
-            <div class="item-handler">
+            </div> -->
+          <!-- Botones -->
+          <!-- <div class="item-handler">
               <span class="quantity-handler down">-</span>
               <span class="item-quantity">1</span>
               <span class="quantity-handler up">+</span>
             </div>
-          </div>
+          </div> -->
 
           <!-- Divisor -->
           <span class="divider"></span>
           <div class="cart-total">
             <p>Total:</p>
-            <span>350$</span>
+            <span class="total">350$</span>
           </div>
 
           <button class="btn-add">Comprar</button>
+          <button class="btn-delete">Borrar compra</button>
         </div>
         <div class="overlay"></div>
       </nav>

@@ -6,6 +6,29 @@ const showMoreBtn = document.querySelector(".btn-more");
 const categoriesContainer = document.querySelector(".categories");
 // El HTML Collection de todas las categorias
 const categoriesList = document.querySelectorAll(".category");
+// Cart
+const cartBtn = document.querySelector(".cart-label");
+// Boton para abrir/cerra menu
+const menuBTN = document.querySelector(".menu-label");
+// Carrito Div
+const cartMenu = document.querySelector(".cart");
+// Menu Hamburguer
+const barsMenu = document.querySelector(".navbar-list");
+// Overlay
+const overlay = document.querySelector(".overlay");
+//Bubble
+const cartBubble = document.querySelector(".bubble");
+// Total COmpra Carrito
+const total = document.querySelector(".total");
+//Boton Comprar
+const buyBTN = document.querySelector(".btn-add");
+// Boton borrar
+const deleteBTN = document.querySelector(".btn-delete");
+// Cart Container
+const productsCart = document.querySelector(".container");
+//Conf el carrito
+const cart = [];
+
 // ###################### Log para renderizar #################
 
 // ######################## Log Ver mas #########################
@@ -38,7 +61,12 @@ const createProductTemplate = (products) => {
              <div class="product-bot">
                <p>Precio Actual:</p> <b>${price}$</b>
              </div>
-             <button class="btn-add">Agregar</button>
+             <button class="btn-add"
+             data-id='${id}'
+             data-name='${name}'
+             data-price='${price}'
+             data-img='${cardimg}'
+             >Agregar</button>
            </div>
          </div>`;
 };
@@ -132,11 +160,68 @@ const isInactiveFilterBtn = (Element) => {
   );
 };
 
+// ############# Log Menu/ Carrito Modal ################
+const toggleCart = () => {
+  cartMenu.classList.toggle("open-cart");
+  if (barsMenu.classList.contains("open-menu")) {
+    barsMenu.classList.remove("open-menu");
+    return;
+  }
+
+  overlay.classList.toggle("show-overlay");
+};
+
+const toggleMenu = () => {
+  barsMenu.classList.toggle("open-menu");
+  if (cartMenu.classList.contains("open-cart")) {
+    cartMenu.classList.remove("open-cart");
+    return;
+  }
+
+  overlay.classList.toggle("show-overlay");
+};
+
+//Fun para cerrar el menu cuando se clickea fuera
+const closeWhenclickOut = () => {
+  barsMenu.classList.remove("open-menu");
+  cartMenu.classList.remove("open-cart");
+  overlay.classList.remove("show-overlay");
+};
+
+//fun cerrar menues, cuando scrolling
+const closeWhenScrolling = () => {
+  if (
+    barsMenu.classList.contains("open-menu") &&
+    cartMenu.classList.contains("open-cart")
+  ) {
+    return;
+  }
+
+  barsMenu.classList.remove("open-menu");
+  cartMenu.classList.remove("open-cart");
+  overlay.classList.remove("show-overlay");
+};
+//---------------------------------------------
+// ############# Log Carrito ################
+//------------------------------------------------
+const addProduct = (Event) => {
+  if (!Event.target.classList.contains("btn-add")) return;
+  const product = Event.target.dataset;
+  console.log(product);
+};
+
 // Funcion Inic.
 const init = () => {
   renderProducts(AppState.products[0]);
   showMoreBtn.addEventListener("click", showMoreArticles);
   categoriesContainer.addEventListener("click", applyFilter);
+
+  cartBtn.addEventListener("click", toggleCart);
+  menuBTN.addEventListener("click", toggleMenu);
+  overlay.addEventListener("click", closeWhenclickOut);
+  window.addEventListener("scroll", closeWhenScrolling);
+
+  productsContainer.addEventListener("click", addProduct);
 };
 
 init();
