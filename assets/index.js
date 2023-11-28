@@ -21,13 +21,13 @@ const cartBubble = document.querySelector(".bubble");
 // Total COmpra Carrito
 const total = document.querySelector(".total");
 //Boton Comprar
-const buyBTN = document.querySelector(".btn-add");
+const buyBTN = document.querySelector(".btn-buy");
 // Boton borrar
 const deleteBTN = document.querySelector(".btn-delete");
 // Cart Container
-const productsCart = document.querySelector(".container");
+const productsCart = document.querySelector(".cart-container");
 //Conf el carrito
-const cart = [];
+let cart = [];
 
 // ###################### Log para renderizar #################
 
@@ -39,36 +39,36 @@ const createProductTemplate = (products) => {
 
   const { id, name, price, category, Description, Tag, cardimg } = products;
   return `<div class="products">
-           <img src="${cardimg}" alt="${name}" class="Instruments" />
-           
-           <!-- Contenedor info -->
-           <div class="product.info">
-             <!-- Top -->
-             <div class="product-top">
-                 <p>⭐${Tag}</p>
-             </div>
-             <!-- Mid -->
-               <div class="product-mid">
-               <h4>${name}</h4>
-               <ul>
-                 <li class="list-desc">Bajo de 4 cuerdas. </li>
-                 <li class="list-desc">Posee 22 trastes de tamaño Jumbo.</li>
-                 <li class="list-desc">Tipo pasivo.</li>
-                 <li class="list-desc">Ideal para niños, adultos de pequeña estatura.</li>
-               </ul>
-             </div>
-             <!-- Botton -->
-             <div class="product-bot">
-               <p>Precio Actual:</p> <b>${price}$</b>
-             </div>
-             <button class="btn-add"
-             data-id='${id}'
-             data-name='${name}'
-             data-price='${price}'
-             data-img='${cardimg}'
-             >Agregar</button>
-           </div>
-         </div>`;
+            <img src="${cardimg}" alt="${name}" class="Instruments" />
+            
+            <!-- Contenedor info -->
+            <div class="product.info">
+              <!-- Top -->
+              <div class="product-top">
+                  <p>⭐${Tag}</p>
+              </div>
+              <!-- Mid -->
+                <div class="product-mid">
+                <h4>${name}</h4>
+                <ul>
+                  <li class="list-desc">Bajo de 4 cuerdas. </li>
+                  <li class="list-desc">Posee 22 trastes de tamaño Jumbo.</li>
+                  <li class="list-desc">Tipo pasivo.</li>
+                  <li class="list-desc">Ideal para niños, adultos de pequeña estatura.</li>
+                </ul>
+              </div>
+              <!-- Botton -->
+              <div class="product-bot">
+                <p>Precio Actual:</p> <b>${price}$</b>
+              </div>
+              <button class="btn-add"
+              data-id='${id}'
+              data-name='${name}'
+              data-price='${price}'
+              data-img='${cardimg}'
+              >Agregar</button>
+            </div>
+          </div>`;
 };
 // Funcion para renderizaar productos
 const renderProducts = (productList) => {
@@ -204,10 +204,181 @@ const closeWhenScrolling = () => {
 //---------------------------------------------
 // ############# Log Carrito ################
 //------------------------------------------------
+//Fun para crear e template dentro del cart
+const createCartProductTemplate = (cartProduct) => {
+  const { price, id, img, name, quantity } = cartProduct;
+
+  return `
+    <div class="cart-item"> 
+    <img src="${img}"
+      class="cart-img"
+      alt="${name}"
+    />
+    <div class="item-info">
+      <h3 class="item-title">${name}</h3>
+      <p class="item-bid">Sub-total:</p>
+      <span class="item-price">${price}$</span>
+    </div>
+  <!-- Botones -->
+  <div class="item-handler">
+      <span class="quantity-handler down" data-id=${id}>-</span>
+      <span class="item-quantity">${quantity}</span>
+      <span class="quantity-handler up" data-id=${id}>+</span>
+    </div>
+  </div>
+  `;
+};
+
+//Render Carrito
+const renderArticle = () => {
+  if (!cart.length) {
+    productsCart.innerHTML = '<p class="empty-msg"> producto agregado</p>';
+    return;
+  }
+
+  productsCart.innerHTML = cart.map(createCartProductTemplate).join("");
+};
+
+// Fun para obtener total de compra
+const getCartTotal = () => {
+  return cart.reduce((acc, cur) => acc + Number(cur.price) * cur.quantity, 0);
+};
+
+//Fun para obtener el total del carrito
+const showCartTotal = () => {
+  total.innerHTML = `${getCartTotal().toFixed(2)} USD`;
+};
+
+//Fun para actualizar la burbuja segun la cantidad
+//de items agregados
+
+const renderCartBubble = () => {
+  cartBubble.textContent = cart.reduce((acc, cur) => acc + cur.quantity, 0);
+};
+
+//Fun para habilitar/ Deshabilitar botones
+const disableBTN = (btn) => {
+  if (!cart.length) {
+    btn.classList.add("disabled");
+  } else {
+    btn.classList.remove("disabled");
+  }
+};
+
+//Fun oara ejecutar funciones necesarias para el
+// edo del cart
+const updateCartState = () => {
+  renderArticle();
+  showCartTotal();
+  renderCartBubble();
+  disableBTN(buyBTN);
+  disableBTN(deleteBTN);
+};
+
 const addProduct = (Event) => {
   if (!Event.target.classList.contains("btn-add")) return;
-  const product = Event.target.dataset;
-  console.log(product);
+  const products = Event.target.dataset;
+  //Crear if para verificar que el producto a
+  //Agregar no este en el carrito
+  if (isExistingCartProduct(products)) {
+    addUnitToProduct(products);
+  } else {
+    createCartProduct(products);
+  }
+
+  updateCartState();
+  console.log(cart);
+};
+
+//Fun para agregar una unidad al producto
+const addUnitToProduct = (products) => {
+  cart = cart.map((cartProduct) =>
+    cartProduct.id === products.id
+      ? { ...cartProduct, quantity: cartProduct.quantity + 1 }
+      : cartProduct
+  );
+};
+
+//Fun para saber si un producto ya existe en el
+//Cart
+const isExistingCartProduct = (products) => {
+  return cart.find((item) => item.id === products.id);
+};
+
+//Fun crear objeto con la info del producto
+//que se quiere agregar al carrito
+const createCartProduct = (products) => {
+  cart = [...cart, { ...products, quantity: 1 }];
+};
+
+// Fun para manejar el evento click de + en el
+// producto del cart
+const handlePlusBtnEvent = (id) => {
+  const existingCartArticle = cart.find((item) => item.id === id);
+  addUnitToProduct(existingCartArticle);
+};
+
+// Fun para manejar el evento click de - en el
+// producto del cart
+const handleMinusBtnEvent = (id) => {
+  const existingCartArticle = cart.find((item) => item.id === id);
+
+  if (existingCartArticle.quantity === 1) {
+    if (window.confirm("confirma que quieres eliminar el articulo")) {
+      removeProductFromCart(existingCartArticle);
+    }
+    return;
+  }
+
+  substractArticleUnit(existingCartArticle);
+};
+
+const substractArticleUnit = (existingCartArticle) => {
+  cart = cart.map((products) => {
+    return products.id === existingCartArticle.id
+      ? { ...products, quantity: Number(products.quantity) - 1 }
+      : products;
+  });
+};
+
+const removeProductFromCart = (existingCartArticle) => {
+  cart = cart.filter((products) => products.id !== existingCartArticle.id);
+  updateCartState();
+};
+
+const handleQuantity = (Event) => {
+  if (Event.target.classList.contains("up")) {
+    handlePlusBtnEvent(Event.target.dataset.id);
+  } else if (Event.target.classList.contains("down")) {
+    handleMinusBtnEvent(Event.target.dataset.id);
+  }
+
+  //Para todos los casos
+  updateCartState();
+};
+
+const resetCartItems = () => {
+  cart = [];
+  updateCartState();
+};
+
+const completeCartAction = (confirmMsg, successMsg) => {
+  if (!cart.length) return;
+  if (window.confirm(confirmMsg)) {
+    resetCartItems();
+    alert(successMsg);
+  }
+};
+
+const completeBuy = () => {
+  completeCartAction("Deseas finalizar la compra", "Gracias por tu compra!");
+};
+
+const deleteCart = () => {
+  completeCartAction(
+    "Desea borrar todo el carrito?",
+    "Sin productos en el carrito"
+  );
 };
 
 // Funcion Inic.
@@ -222,6 +393,13 @@ const init = () => {
   window.addEventListener("scroll", closeWhenScrolling);
 
   productsContainer.addEventListener("click", addProduct);
+  productsCart.addEventListener("click", handleQuantity);
+  document.addEventListener("DOMContentLoaded", renderArticle);
+
+  buyBTN.addEventListener("click", completeBuy);
+  deleteBTN.addEventListener("click", deleteCart);
+  disableBTN(buyBTN);
+  disableBTN(deleteBTN);
 };
 
 init();

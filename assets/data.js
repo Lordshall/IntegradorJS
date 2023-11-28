@@ -2,7 +2,7 @@ const instrumentData = [
   {
     id: 1,
     name: "EPIPHONE TOBY STDARD-IV",
-    price: "100$",
+    price: "100",
     category: "cuerdas",
     Description:
       "Bajo de 4 cuerdas, tipo pasivo, ideal para niños, adultos de pequeña estatura o con predilección por bajos de escala corta. Posee 22 trastes de tamaño Jumbo.",
@@ -12,7 +12,7 @@ const instrumentData = [
   {
     id: 2,
     name: "IBANEZ GSRM20PW",
-    price: "120$",
+    price: "120",
     category: "cuerdas",
     Description:
       "Bajo de 4 cuerdas con escala corta (726 mm) y electrónica de tipo pasivo. color blaco perla. Cuerpo de okoume, mástil de arce, diapasón de jatoba, 22 trastes. Posee dos pastillas single coil 'J' en el puente y tipo 'P' en la zona del mástil. 3 perillas de control, dos para el volumen y otra para configuración del tono.",
@@ -22,7 +22,7 @@ const instrumentData = [
   {
     id: 3,
     name: "IBANEZGIO GSR200-JB",
-    price: "150$",
+    price: "150",
     category: "cuerdas",
     Description:
       "Bajo eléctrico color azul, 4 cuerdas de escala larga (864 mm). Tipo activo. Cuerpo de álamo y mástil de arce. 22 trastes Pastillas single coil PSNDJ + PSNDP. Tiene 4 perillas de control: volumen, tono y equalizador. (Pilas no incluidas)",
@@ -32,7 +32,7 @@ const instrumentData = [
   {
     id: 4,
     name: "JACKSON JS1X",
-    price: "180$",
+    price: "180",
     category: "cuerdas",
     Description:
       "Bajo eléctrico 4 cuerdas y escala larga (864 mm).  De tipo activo. Cuerpo  de tilo, arce y palosanto. Diapasón de 24 trastes. 2 pastillas single coil. Posee 4 perillas: volumen, ecualización de alta y baja frecuencia. Los clavijeros y puente de montaje empotrado. Tiene un alma metálica ajustable. Presenta un diseño de Michael Tobias. Sonidos expresivos y versátiles",
@@ -42,7 +42,7 @@ const instrumentData = [
   {
     id: 5,
     name: "MARCUS MILLER V3",
-    price: "200$",
+    price: "200",
     category: "cuerdas",
     Description:
       "Bajo eléctrico Marcus Miller V3 TS 2nd Gen. 4 cuerdas con escala larga (864 mm). Configurar como activo o pasivo. Cuerpo de caoba, arce y palisandro.  Diapason de 20 trastes. 2 pastillas single coil Marcus Standard Jazz Bass. 5 perillas: volumen y tono, selector de pastillas, agudos, medios/frecuencia media y minipalanca (Activo/Pasivo)",
@@ -52,7 +52,7 @@ const instrumentData = [
   {
     id: 6,
     name: "SBM23PT PINK TWILIGHT SX",
-    price: "100$",
+    price: "100",
     category: "cuerdas",
     Description:
       "Bajo eléctrico estilo Precission Bass. Color Pink Twilight. Cuerpo de tilo y Arce. 22 trastes",
@@ -62,7 +62,7 @@ const instrumentData = [
   {
     id: 7,
     name: "Lp Aspire",
-    price: "250$",
+    price: "250",
     category: "percusion",
     Tag: "5.0 Doble cuero curado",
     Description: "Conga Serie Lp Aspire Con Soporte Lpa646-dw Latin Percussion",
@@ -71,7 +71,7 @@ const instrumentData = [
   {
     id: 8,
     name: "Parquer Light",
-    price: "190$",
+    price: "190",
     category: "percusion",
     Description: "Conga Parquer Light De Fibra De Vidrio 11 2101100bk Cuota",
     Tag: "4.5 cuero simple ajustable",
@@ -80,7 +80,7 @@ const instrumentData = [
   {
     id: 9,
     name: "Meinl_Headliner",
-    price: "100$",
+    price: "100",
     category: "percusion",
     Description: "Conga Meinl Headliner Hc512 11 + 12 + Soportes Color Natural",
     Tag: "4.5 cuero simple ajustable",
@@ -89,7 +89,7 @@ const instrumentData = [
   {
     id: 10,
     name: "Denver Ls-105f",
-    price: "100$",
+    price: "100",
     category: "percusion",
     Tag: "5.0 Ideal para Estudio",
     Description: "Bongoes Denver Ls-105f - Percusion",
@@ -98,7 +98,7 @@ const instrumentData = [
   {
     id: 11,
     name: "Meinl Hb50bk",
-    price: "100$",
+    price: "100",
     category: "percusion",
     Description: "Bongo Meinl Hb50bk Parche Bufalo 6 1/2 Y 7 1/2",
     Tag: "5.0 Ideal para Estudio",
@@ -107,7 +107,7 @@ const instrumentData = [
   {
     id: 12,
     name: "Toca 3170nf Nf Elite Pro",
-    price: "100$",
+    price: "100",
     category: "percusion",
     Description: "Bongos Toca 3170nf Nf Elite Pro 7 Y 8 1/2 Natural Maple Cuo",
     Tag: "5.0 Ideal para Estudio",
@@ -116,7 +116,7 @@ const instrumentData = [
   {
     id: 13,
     name: "AKAI Profesional MPK Mini MK3",
-    price: "100$",
+    price: "100",
     category: "keyboarding",
     Tag: "5.0 Ideal para Estudio",
     Description:
@@ -126,7 +126,7 @@ const instrumentData = [
   {
     id: 14,
     name: "Nord Electro 6D 61",
-    price: "100$",
+    price: "100",
     category: "keyboarding",
     Description:
       "Nord Electro 6D 61 Etapa Piano 61 Nota Semi-Ponderada Waterfall Keybed",
@@ -136,7 +136,7 @@ const instrumentData = [
   {
     id: 15,
     name: "Roland Juno-60 Keyboard Synthesizer",
-    price: "100$",
+    price: "100",
     category: "keyboarding",
     Description: "Roland Juno-Ds61 61, Teclado Sintetizador",
     Tag: "5.0 Pedal de autosustein incluido",
@@ -145,7 +145,7 @@ const instrumentData = [
   {
     id: 16,
     name: "Casio Xw-p1 Sensitivo",
-    price: "100$",
+    price: "100",
     category: "keyboarding",
     Description: "Sintetizador Casio Xw-p1 Midi Usb Sensitivo De 61 Teclas",
     Tag: "4.6 5 octavas, con sensibilidad",
@@ -154,7 +154,7 @@ const instrumentData = [
   {
     id: 17,
     name: "Teclado Órgano Yamaha Psr-ew300 76 Teclas",
-    price: "100$",
+    price: "100",
     category: "keyboarding",
     Description:
       "Yamaha Psr-Ew310 Adaptador De Potencia Teclado Portable De 76 Teclas Vendido Por Separado",
@@ -163,7 +163,7 @@ const instrumentData = [
   {
     id: 18,
     name: "Yamaha Psr E473",
-    price: "100$",
+    price: "100",
     category: "keyboarding",
     Description: "Yamaha Teclado Portátil De 61 Teclas (Psre473)",
     cardimg: "./assets/Img/Keyboarding/Yamaha2.png",
@@ -171,7 +171,7 @@ const instrumentData = [
   {
     id: 19,
     name: "Mini Timbales con cencerro",
-    price: "100$",
+    price: "100",
     category: "percusion",
     Description:
       "Latin Percussion John Dolmayan Mini Timbales con cencerro y paquete de montaje",
@@ -180,7 +180,7 @@ const instrumentData = [
   {
     id: 20,
     name: "Lpa256 Aspire Series",
-    price: "100$",
+    price: "100",
     category: "percusion",
     Description:
       "Latin percusión Lpa256 Aspire Series, Juego De Timbale De 13 Y 14 Pulgadas Con Campana",
@@ -189,7 +189,7 @@ const instrumentData = [
   {
     id: 21,
     name: "Timbales Meinl Signature",
-    price: "100$",
+    price: "100",
     category: "percusion",
     Description: "Timbales Marca Meinl Signature Diego Gale",
     cardimg: "./assets/Img/Timbals/Timbals3.png",
@@ -197,7 +197,7 @@ const instrumentData = [
   {
     id: 22,
     name: "Lp258Slp Tito Puente Thunder",
-    price: "100$",
+    price: "100",
     category: "percusion",
     Description:
       "Latin Percusio Lp258Slp Tito Puente Thunder Timbales Stand De Acero",
@@ -206,7 +206,7 @@ const instrumentData = [
   {
     id: 23,
     name: "Jean Paul USA TR-330",
-    price: "100$",
+    price: "100",
     category: "metales",
     Description: "Trompeta Jean Paul USA TR-330, estándar, en Bb",
     cardimg: "./assets/Img/Trumpets/Trumpet.png",
@@ -214,7 +214,7 @@ const instrumentData = [
   {
     id: 24,
     name: "Yamaha Ytr 2330",
-    price: "100$",
+    price: "100",
     category: "metales",
     Description: "Yamaha Ytr 2330, Trumpeta Para Estudiantes",
     cardimg: "./assets/Img/Trumpets/Trumpet2.png",
@@ -222,7 +222,7 @@ const instrumentData = [
   {
     id: 25,
     name: "Apollo Trombón Tenor",
-    price: "100$",
+    price: "100",
     category: "metales",
     Description:
       "Apollo Trombón Tenor en lacado dorado, completo con estuche y accesorios (Student)",
@@ -231,7 +231,7 @@ const instrumentData = [
   {
     id: 26,
     name: "Trombon A Vara Tenor Bronce",
-    price: "100$",
+    price: "100",
     category: "metales",
     Description: "Trombon A Vara Tenor Bronce Estuche Rigido Aceite Kit Combo",
     cardimg: "./assets/Img/Trumpets/Tromb2.png",
@@ -239,7 +239,7 @@ const instrumentData = [
   {
     id: 27,
     name: "Summina Eb Saxofón Alto/ Gold E Flat Saxo 82Z",
-    price: "100$",
+    price: "100",
     category: "metales",
     Description:
       "summina Eb Saxofón Alto Latón Lacquered Gold E Flat Saxo 82Z Instrumento de viento de madera con cepillo de limpieza, guantes de tela, funda acolchada",
@@ -248,7 +248,7 @@ const instrumentData = [
   {
     id: 28,
     name: "Apollo Saxofón alto",
-    price: "100$",
+    price: "100",
     category: "metales",
     Description:
       "Apollo Saxofón alto en laca dorada con almohadillas de cuero, completo con funda y accesorios",
