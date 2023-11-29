@@ -267,6 +267,7 @@ header {
 .empty-msg {
   color: var(--text-blue);
   font-size: 14px;
+  font-weight: 700;
 }
 
 main {
@@ -399,7 +400,7 @@ main {
   margin-top: 20px;
   font-size: 2rem;
   font-weight: 800;
-  color: var(--text-Black);
+  color: var(--fire);
 }
 
 .products-container {
@@ -534,7 +535,7 @@ main {
 #Empresas h3 {
   font-size: 2rem;
   font-weight: 800;
-  color: var(--text-Black);
+  color: var(--fire);
 }
 
 .Enterprise {

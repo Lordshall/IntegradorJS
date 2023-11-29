@@ -232,7 +232,8 @@ const createCartProductTemplate = (cartProduct) => {
 //Render Carrito
 const renderArticle = () => {
   if (!cart.length) {
-    productsCart.innerHTML = '<p class="empty-msg"> producto agregado</p>';
+    productsCart.innerHTML =
+      '<p class="empty-msg"> Sin articulos agregados</p>';
     return;
   }
 

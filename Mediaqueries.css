@@ -104,6 +104,7 @@
   /*################### Empresa #####################*/
 
   .Enterprise {
+    padding-top: 10px;
     max-width: 90%;
     justify-content: space-around;
   }
@@ -224,13 +225,14 @@
   }
 
   .Compra_Venta {
-    width: 150px;
+    width: 170px;
+    height: 110px;
   }
 
   .Enterprise-item2 {
     min-width: 100px;
     justify-content: center;
-    width: fit-content;
+    /* width: fit-content; */
   }
 
   .Enterprise-item2 h5 {
@@ -241,8 +243,7 @@
 
   .Enterprise-item2 a {
     text-align: center;
-    font-size: 12px;
-    max-width: fit-content;
+    font-size: 10px;
   }
 
   /*################### Footer #####################*/
