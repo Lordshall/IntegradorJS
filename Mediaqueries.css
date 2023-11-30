@@ -177,10 +177,6 @@
     border: none;
   }
 
-  .cart-item {
-    flex-wrap: wrap;
-  }
-
   .item,
   .item2 {
     justify-content: center;
