@@ -26,8 +26,15 @@ const buyBTN = document.querySelector(".btn-buy");
 const deleteBTN = document.querySelector(".btn-delete");
 // Cart Container
 const productsCart = document.querySelector(".cart-container");
+// Chart de success
+const successModal = document.querySelector(".modal-chart");
 //Conf el carrito
-let cart = [];
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+//Fun para guardar en el LS
+const saveCart = () => {
+  localStorage.setItem("cart", JSON.stringify(cart));
+};
 
 // ###################### Log para renderizar #################
 
@@ -250,8 +257,7 @@ const showCartTotal = () => {
   total.innerHTML = `${getCartTotal().toFixed(2)} USD`;
 };
 
-//Fun para actualizar la burbuja segun la cantidad
-//de items agregados
+//Fun para actualizar la burbuja segun la cantidad de items agregados
 
 const renderCartBubble = () => {
   cartBubble.textContent = cart.reduce((acc, cur) => acc + cur.quantity, 0);
@@ -266,9 +272,9 @@ const disableBTN = (btn) => {
   }
 };
 
-//Fun oara ejecutar funciones necesarias para el
-// edo del cart
+//Fun oara ejecutar funciones necesarias para el edo del cart
 const updateCartState = () => {
+  saveCart();
   renderArticle();
   showCartTotal();
   renderCartBubble();
@@ -283,8 +289,10 @@ const addProduct = (Event) => {
   //Agregar no este en el carrito
   if (isExistingCartProduct(products)) {
     addUnitToProduct(products);
+    successChartadd("Se agrego una unidad del articulo");
   } else {
     createCartProduct(products);
+    successChartadd("Articulo agregado exitosamente");
   }
 
   updateCartState();
@@ -300,16 +308,24 @@ const addUnitToProduct = (products) => {
   );
 };
 
-//Fun para saber si un producto ya existe en el
-//Cart
+//Fun para saber si un producto ya existe en el Cart
 const isExistingCartProduct = (products) => {
   return cart.find((item) => item.id === products.id);
 };
 
-//Fun crear objeto con la info del producto
-//que se quiere agregar al carrito
+//Fun crear objeto con la info del producto que se quiere agregar al carrito
 const createCartProduct = (products) => {
   cart = [...cart, { ...products, quantity: 1 }];
+};
+
+//Fun para mostrar el cartel modal
+const successChartadd = (msg) => {
+  successModal.classList.add("active-chart");
+  successModal.textContent = msg;
+
+  setTimeout(() => {
+    successModal.classList.remove("active-chart");
+  }, 1300);
 };
 
 // Fun para manejar el evento click de + en el
@@ -401,6 +417,7 @@ const init = () => {
   deleteBTN.addEventListener("click", deleteCart);
   disableBTN(buyBTN);
   disableBTN(deleteBTN);
+  renderCartBubble(cart);
 };
 
 init();
