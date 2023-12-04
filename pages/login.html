@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MusicMarket_login</title>
+    <link rel="stylesheet" href="./Login/Style.css" />
+    <link rel="stylesheet" href="./Login/mediaqueries.css" />
+    <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="./Registro/Assets/apple-touch-icon.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="./Registro/Assets/favicon-32x32.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="./Registro/Assets/favicon-16x16.png"
+  />
+  <link rel="manifest" href="./Registro/Assets/site.webmanifest" />
+  </head>
+  <body>
+
+    <header>
+      <img src="./Registro/Assets/Logo4.png" class="logo" alt="Music_Market" />
+      <nav class="navbar">
+      </nav>
+    </header>
+
+  </head>
+  <body>
+    <form class="form-container" id="Contacto" novalidate>
+      <div class="Form-top">
+        <img src="./Login/Assets/Logo4.png" class="Icon" alt="Icon" />
+        <h1>Ingresa tu ususario y contraseña</h1>
+      </div>
+
+      <div class="Form-mid">
+        <!-- <label for="name" class="form-label">Usuario</label> -->
+        <input
+          type="email"
+          name="nombre"
+          id="email"
+          class="form-input"
+          placeholder="Email"
+          autocomplete="off"
+        />
+        <!-- <label for="password" class="form-label">Ingresa tu Contraseña</label> -->
+        <input
+          type="password"
+          name="password"
+          id="password"
+          class="form-input"
+          placeholder="Contraseña"
+          autocomplete="off"
+        />
+      </div>
+
+      <small id="form-error"></small>
+        <div class="Form-bottom">
+          <input type="submit" class="form-submit-btn" value="Ingresar">
+          <a href="../index.html" class="btn">Volver</a>
+        
+        </div>
+        <p>¿Aun sin cuenta?<a href="./index.html" class="back"> Registrate</a></p>
+    </form>
+    <script src="./Login/login.js"></script>
+  </body>
+</html>

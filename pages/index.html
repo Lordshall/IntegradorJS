@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MusicMarket_Registro</title>
+    <link rel="stylesheet" href="./Registro/Style.css" />
+    <link rel="stylesheet" href="./Registro/mediaqueries.css" />
+    <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="./Registro/Assets/apple-touch-icon.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="./Registro/Assets/favicon-32x32.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="./Registro/Assets/favicon-16x16.png"
+  />
+  <link rel="manifest" href="./Registro/Assets/site.webmanifest" />
+  </head>
+  <body>
+
+    <header>
+      <img src="./Registro/Assets/Logo4.png" class="logo" alt="Music_Market" />
+      <nav class="navbar">
+      </nav>
+    </header>
+
+    <form class="form-container" id="Contacto" novalidate>
+      <p class="form-title">Crea Tu cuenta</p>
+      <div class="Form-top">
+        <img src="./Registro/Assets/Logo4.png" class="Icon" alt="Icon" />
+        <p>Únete a nuestra comunidad de músicos y obtén beneficios exclusivos al registrarte</p>
+      </div>
+<div class="Form-mid">
+      <div class="form-field">
+        <!-- <label for="name" class="form-label">Nombre:</label> -->
+        <input
+          type="text"
+          class="form-input"
+          id="name"
+          placeholder="Ingrese su Nombre"
+          autocomplete="off"
+        />
+        <small class="msg"></small>
+      </div>
+      <div class="form-field">
+        <!-- <label for="name" class="form-label">Apellido:</label> -->
+        <input
+          type="text"
+          class="form-input"
+          id="lastName"
+          placeholder="Ingrese su Apellido"
+          autocomplete="off"
+        />
+        <small class="msg"></small>
+      </div>
+      <div class="form-field">
+        <!-- <label for="email" class="form-label">Correo:</label> -->
+        <input
+        class="form-input"
+          type="email"
+          name="mail"
+          id="mail"
+          placeholder="johndoe@mail.com"
+          autocomplete="off"
+        />
+        <small class="msg"></small>
+      </div>
+      <div class="form-field">
+        <!-- <label for="name" class="form-label">Apellido:</label> -->
+        <input
+          type="password"
+          class="form-input"
+          id="password"
+          placeholder="Ingrese su Contraseña"
+          autocomplete="off"
+        />
+        <small class="msg"></small>
+      </div>
+        <div class="form-field">
+          <!-- <label for="tel" class="form-label">Telefono:</label> -->
+          <input
+            type="tel"
+            class="form-input"
+            name="telefono"
+            id="phone"
+            placeholder="12-3456-7890"
+            autocomplete="off"
+          />
+          <small class="msg"></small>
+        </div>
+        </div>
+        <div class="Form-bottom">
+          <a href="../index.html" target="_blank" class="btn">Registrarse</a
+            >
+          <a href="../index.html" class="btn">Volver</a>
+        </div>
+      </div>
+      <p class="form-login">
+        ¿Ya tienes cuenta?
+        <a href="./logueo.html">Inicia Sesión</a>
+      </p>
+    </form>
+    <script src="./Registro/register.js"></script>
+  </body>
+</html>

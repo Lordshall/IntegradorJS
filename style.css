@@ -6,15 +6,10 @@
   --background: #549cd0;
   --primary: #fbd9d0;
   --secondary: #ec2476;
-  /* --secondary: #272d37; */
   --btn-bg: #fcd00a;
   --bg-azul-10: #e9eeff;
-  --bg-white: #fff;
-  --bg-electric: #f0fbff;
-  --nav-bg: #0f1525;
 
   /* Text colors */
-  --text-brown: #c59d6e;
   --text-Black: #2e292c;
   --text-red: #ec2476;
   --text-blue: #549cd0;
@@ -393,7 +388,7 @@ main {
 }
 
 .active {
-  background-color: darkblue;
+  background-color: var(--fire);
 }
 
 #Products h3 {
@@ -690,7 +685,7 @@ footer span {
 }
 
 footer p {
-  color: var(--bg-white);
+  color: var(--text-white);
 }
 
 .hidden {

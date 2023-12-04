@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&family=Open+Sans:ital,wght@1,400;1,500;1,600;1,700;1,800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Open Sans", Caveat;
+}
+
+:root {
+  /* bg colors */
+  --background: #549cd0;
+  --primary: #fbd9d0;
+  --secondary: #ec2476;
+  --btn-bg: #fcd00a;
+  --bg-azul-10: #e9eeff;
+
+  /* Text colors */
+  --text-Black: #2e292c;
+  --text-red: #ec2476;
+  --text-blue: #549cd0;
+  --text-white: #fff;
+
+  /* Decoration */
+  --fire: #ff6d00;
+  --electric: #64d3ff;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+  padding: 0px 30px 0px 30px;
+  margin: 0 auto;
+  z-index: 4;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.75)
+    ),
+    url("./assets/Salsa3.jpg");
+  background-size: cover, no-repeat;
+  background-position: top;
+  gap: 20px;
+}
+
+.logo {
+  height: 120px;
+  width: 120px;
+}
+
+body {
+  font-family: "Open Sans";
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.75)
+    ),
+    url("./Assets/Concert.jpg");
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(to left, var(--primary), var(--bg-azul-10));
+  max-width: 350px;
+  margin: auto;
+  padding: 20px 10px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px -5px rgb(0, 0, 0 / 30%);
+  gap: 10px;
+}
+
+.Icon {
+  width: 150px;
+  height: 150px;
+}
+
+.Form-top h1 {
+  font-weight: 700;
+  background: linear-gradient(to bottom, #fccc06, #ed1e79);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.form-input {
+  width: 100%;
+  background: #cacfca;
+  color: var(--text2);
+  padding: 5px 5px;
+  font-size: 16px;
+  border-radius: 8px;
+  font-family: "kalam", Caveat;
+  cursor: pointer;
+}
+
+.Form-top,
+.Form-mid,
+.Form-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-Black);
+}
+
+.form-submit-btn,
+.Form-bottom a {
+  text-align: center;
+  width: 100%;
+  background: var(--fire);
+  color: var(--text-Black);
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 16px;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+
+.form-submit-btn:hover,
+.Form-bottom a:hover {
+  background: var(--electric);
+}
+
+.back {
+  color: var(--text-red);
+}
