@@ -44,7 +44,7 @@ header {
       rgba(0, 0, 0, 0.1),
       rgba(0, 0, 0, 0.75)
     ),
-    url("./assets/Salsa3.jpg");
+    url("../Login/Assets/Salsa3.jpg");
   background-size: cover, no-repeat;
   background-position: top;
   gap: 20px;
