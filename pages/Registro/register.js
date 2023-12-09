@@ -32,7 +32,7 @@ const isEmailValid = (input) => {
 
 //Fun para validar si el mail esta guardado
 const isExistingEmail = (input) => {
-  return users.some((users) => users.email === input.value.trim());
+  return users.some((user) => user.email === input.value.trim());
 };
 
 //Fun para revisar la contraseña
@@ -184,7 +184,7 @@ const validateForm = (Event) => {
 
     saveToLocalStorage(users);
     alert("Registrado con Éxito");
-    window.location.href = "../pages/login.html";
+    window.location.href = "login.html";
   }
 };
 
